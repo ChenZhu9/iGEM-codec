@@ -40,8 +40,7 @@ def draw(str):
                 x=x-10
             i = i+1
     
-#data = input("Please input the stored data:")
-data="iGEM-SJTU-BioX-Mulan"
+data = input("Please input the stored data:")
 str1=encode_2(data)
 #str1=str1+"0"
 msg = rs_encode_msg([ord(x) for x in data], 4)
@@ -68,3 +67,5 @@ for s in list1:
     draw(s)
     pic.save(file+"\\mircoplate\\"+timenow+"_"+str(num)+".jpg","JPEG")
     num=num+1
+    
+print("Please check the image in the directory",file+"\\mircoplate")
